@@ -1,0 +1,3 @@
+module Scorerb
+  # Your code goes here...
+end
