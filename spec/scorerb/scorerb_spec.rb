@@ -32,4 +32,18 @@ describe Scorerb do
 	it "should drop score with lower fuzzines" do
 		"Hi there".score("Hi thi", 0.1).should be < "Hi there".score("Hi thi", 0.8)
 	end
+
+  describe "finding first match unconsidering letters case" do
+    it "should find the first match given a lowercase" do
+      "Abc".index_anycase("a").should be == 0
+    end
+    it "should find the first match given a uppercase" do
+      "Abc".index_anycase("A").should be == 0
+    end
+
+    it "should return nothing if no matches" do
+      "Abc".index_anycase("Z").should be == nil
+    end
+  end
+
 end

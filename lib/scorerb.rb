@@ -1,5 +1,10 @@
 module Scorerb
   class ::String
+  def index_anycase(match)
+    self.index(match.upcase) || self.index(match.downcase)  
+  end    
+
+
 	def score(abrv, fuzzines = 0)
 
 		# If strings are equal return exact one
@@ -15,13 +20,10 @@ module Scorerb
 
 		(0..abrv_size-1).each do |i|
 			char = abrv[i]
-			index_char_upper = word.index(char.upcase) || -1
-			index_char_lower = word.index(char.downcase) || -1
-			min_index = [index_char_upper, index_char_lower].min
 			
-			index_in_string = min_index > -1 ? min_index : [index_char_upper, index_char_lower].max
+			index_in_string = word.index_anycase(char)
 
-			if index_in_string == -1
+			if index_in_string.nil?
 				if fuzzines > 0
 					fuzzies += 1 - fuzzines
 					next
