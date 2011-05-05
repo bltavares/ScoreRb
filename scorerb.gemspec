@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Bruno Tavares"]
   s.email       = ["bruno.exz@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{Simple fuzzy search for your strings}
-  s.description = %q{With that gem you have the ability to check one string against other and get the score}
+  s.summary     = %q{Simple fuzzy search for your strings and arrays}
+  s.description = %q{With that gem you have the ability to check one string against other, string against an array and get the score for the matches}
 
 
   s.files         = `git ls-files`.split("\n")
