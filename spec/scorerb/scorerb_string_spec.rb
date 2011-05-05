@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Scorerb do
+describe Scorerb::String do
 	it "should add score method to strings" do
 		"".should respond_to :score
 	end

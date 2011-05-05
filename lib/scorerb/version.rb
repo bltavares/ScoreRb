@@ -1,3 +1,3 @@
 module Scorerb
-  VERSION = "0.0.3a"
+  VERSION = "0.1.0"
 end
