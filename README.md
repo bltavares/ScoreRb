@@ -26,7 +26,17 @@ It's simple:
 >	"Abc".score "A" # without fuzzines
 >       
 >       "Abc".score "azb" 0.2 # with fuzzines (0..1)
+>       
+>       ["abc","AB","a"].score "A"
 > 
+
+## Options
+
+### String
+        "Hello".score "He", fuzzines = 0 
+
+### Array
+        [1,2,3].score "1", :fuzz => 0, :to_s => false 
 
 ## Credits
 

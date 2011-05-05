@@ -24,4 +24,9 @@ describe Scorerb::Array do
     result = {"1" => 1 , "2" => 0, "3" => 0}
     [1,2,3].score("1", :to_s => true).should be == result
   end
+
+  it "should accept all the options together" do
+    result = {"1" => 1 , "12" => 0.55, "113" => 0.41666666666666663 }
+    [1,12,113].score("1", :to_s => true, :fuzz => 0.5 ).should be == result
+  end
 end
