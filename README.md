@@ -3,7 +3,7 @@ Scorerb is a fuzzy string search algorithm.
 
 
 
-[![Build Status](https://secure.travis-ci.org/bltavares/scorerb.png)](http://travis-ci.org/bltavares/scorerb)
+[![Build Status](https://secure.travis-ci.org/bltavares/ScoreRb.png)](http://travis-ci.org/bltavares/ScoreRb)
 _Stable on ruby ~> 1.9.2, need more tests under other versions_
 
 ## What it does
