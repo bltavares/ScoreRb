@@ -19,7 +19,7 @@ module Scorerb
 		    final_score = 0
 
 		    (0..abrv_size-1).each do |i|
-			    char = abrv[i]
+			    char = abrv[i,1]
 			
 			    index_in_string = word.index_anycase(char)
 
