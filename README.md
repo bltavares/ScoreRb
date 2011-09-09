@@ -1,6 +1,11 @@
 # Scorerb
 Scorerb is a fuzzy string search algorithm.
 
+
+
+[![Build Status](https://secure.travis-ci.org/bltavares/scorerb.png)](http://travis-ci.org/bltavares/scorerb)
+_Stable on ruby ~> 1.9.2, need more tests under other versions_
+
 ## What it does
 
  * It tells how much a string matches another one
